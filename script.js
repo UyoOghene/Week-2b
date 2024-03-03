@@ -58,13 +58,12 @@
     let clickcount=0;
     let counter = document.getElementById('counter')
 
-    function scorecount(e){
+    function scorecount(){
         clickcount++;
         if(clickcount ===1){
-        counter.innerHTML='you clicked'+' ' + clickcount +' ' +  'time';
+        counter.innerText='you clicked'+' ' + clickcount +' ' +  'time';
         } else{
-        counter.innerHTML='you clicked'+' ' + clickcount +' ' +  'times';
-   
+        counter.innerText='you clicked'+' ' + clickcount +' ' +  'times';
         }
     }
 
