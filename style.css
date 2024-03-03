@@ -1,0 +1,14 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#shape{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: none;
+
+}
+#timerp {
+font-weight: bold;
+}
