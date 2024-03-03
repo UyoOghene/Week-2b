@@ -12,3 +12,15 @@ body{
 #timerp {
 font-weight: bold;
 }
+
+#counter{
+    color: blue;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    font-weight: bold;
+    width:200px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+
+}

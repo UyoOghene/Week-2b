@@ -14,6 +14,8 @@
 
 
   function makeshapeappear() {
+
+
         if (Math.random() > 0.5){
             shape.style.borderRadius = '50%';
         } else{
@@ -35,17 +37,35 @@
    function appearafterdelay(){
         setTimeout(makeshapeappear, 1000);
 
+
     }
 
     appearafterdelay();
 
 
+
    shape.onclick =function timer(){
-    let end = new Date().getTime();
+        let end = new Date().getTime();
         shape.style.display='none';
         let timetaken =( end - start)/1000;
         timerp.innerHTML= 'Your time is : ' + timetaken +'s';
         appearafterdelay();
 
+        scorecount();
+
+
+
     }
+
+    let clickcount=0;
+    let counter = document.getElementById('counter')
+
+    function scorecount(e){
+        clickcount++;
+        counter.innerHTML='you clicked' + clickcount  +  'times';
+    }
+
+
+
+    
 
