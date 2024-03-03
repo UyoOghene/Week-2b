@@ -53,8 +53,6 @@
 
         scorecount();
 
-
-
     }
 
     let clickcount=0;
@@ -62,7 +60,12 @@
 
     function scorecount(e){
         clickcount++;
-        counter.innerHTML='you clicked' + clickcount  +  'times';
+        if(clickcount ===1){
+        counter.innerHTML='you clicked'+' ' + clickcount +' ' +  'time';
+        } else{
+        counter.innerHTML='you clicked'+' ' + clickcount +' ' +  'times';
+   
+        }
     }
 
 
